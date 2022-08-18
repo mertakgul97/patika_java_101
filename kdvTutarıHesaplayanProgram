@@ -1,0 +1,22 @@
+package kdvTutarıHesaplayanProgram;
+
+import java.util.Scanner;
+
+public class kdvTutarıHesaplayanProgram {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		double kdvFiyat,kdvOran;
+		System.out.print("Tutarı giriniz: ");
+		double tutar=scan.nextDouble();
+		double kdv=tutar>1000 ? 0.08:0.18;
+		kdvFiyat=(kdv*tutar)+tutar;
+		kdvOran=kdvFiyat-tutar;
+		System.out.println("KDV'siz fiyat: "+ tutar);
+		System.out.println("KDV'li fiyat: "+ kdvFiyat);
+		System.out.println("KDV tutarı: "+ kdvOran);
+	    
+
+	}
+
+}
