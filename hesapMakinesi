@@ -1,0 +1,36 @@
+package switchHesapMak;
+
+import java.util.Scanner;
+
+public class switchHesapMak {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Yapacağınız işlemi seçin:\n1--> Toplama\n2--> Çıkarma\n3--> Çarpma\n4--> Bölme");
+		int secim=scan.nextInt();
+		System.out.print("İlk sayıyı giriniz:");
+		int sayi1=scan.nextInt();
+		System.out.print("İkinci sayıyı giriniz: ");
+		int sayi2=scan.nextInt();
+	    double total=0;
+		switch(secim) {
+		case 1: total=sayi1+sayi2;
+		System.out.print("Sonuç: " +total);
+		break;
+		case 2: total=sayi1-sayi2;
+		System.out.print("Sonuç: " +total);
+		break;
+		case 3: total=sayi1*sayi2;
+		System.out.print("Sonuç: " +total);
+		break;
+		case 4: total=sayi1/sayi2;
+		System.out.print("Sonuç: " +total);
+		break;
+		default:
+			System.out.println("Hatalı giriş yaptınız");
+			break;
+		}
+
+	}
+
+}
