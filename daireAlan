@@ -1,0 +1,18 @@
+package daireAlanCevre;
+
+import java.util.Scanner;
+
+public class daireAlanCevre {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		double pi=3.14,a,r,alan;
+		System.out.print("Yarıçap uzunluğunu giriniz: ");
+        r=scan.nextDouble();
+        System.out.print("Merkez açının ölçüsünü giriniz: ");
+        a=scan.nextDouble();	
+        alan=(pi*(r*r)*a)/360;
+        System.out.print("Alan: " + alan);
+	}
+
+}
