@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ucgenAlanHesaplama {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		double cevre,alan,u;
+		Scanner scan=new Scanner(System.in);
+		System.out.print("İlk kenar uzunluğunu giriniz: ");
+		a=scan.nextInt();
+		System.out.print("İkinci kenar uzunluğunu giriniz: ");
+		b=scan.nextInt();
+		System.out.print("Üçüncü kenar uzunluğunu giriniz: ");
+		c=scan.nextInt();
+		u=(a+b+c)/2;
+		cevre=2*u;
+		alan=Math.sqrt(u*(u-a)*(u-b)*(u-c));
+		System.out.println("Üçgenin çevresi: "+ cevre);
+		System.out.println("Üçgenin alanı: "+ alan);
+	}
+
+}
