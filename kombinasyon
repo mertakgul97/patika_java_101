@@ -1,0 +1,31 @@
+package patikaOdev;
+
+import java.util.Scanner;
+
+public class kombinasyon {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("n sayısını giriniz: ");
+		int n=scan.nextInt();
+		System.out.print("r sayısını giriniz: ");
+        int r=scan.nextInt();
+        int ntotal=1;
+        int rtotal=1;
+        int nrtotal=1;
+        double kombinasyon;
+        for(int i=1;i<=n;i++) {
+        	ntotal*=i;
+        }
+        for(int i=1;i<=r;i++) {
+        	rtotal*=i;
+        }
+        for(int i=1;i<=n-r;i++) {
+        	nrtotal*=i;
+        }
+        kombinasyon=ntotal/(rtotal*nrtotal);
+        
+        System.out.println("Kombinasyon sonucu: " + kombinasyon);
+	}
+
+}
