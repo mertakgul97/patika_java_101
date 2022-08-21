@@ -1,0 +1,17 @@
+package patikaOdev;
+
+import java.util.Scanner;
+
+public class harmonik {
+public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Sayı Giriniz: ");
+        int sayi = scan.nextInt();
+        double toplam = 0;
+
+        for (int i = 1; i <= sayi; i++) {
+            toplam = toplam + (1.0 / i);
+        }
+        System.out.println("Harmonik Seri Toplamı: " + toplam);
+    }
+}
