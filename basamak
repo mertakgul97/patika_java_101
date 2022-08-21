@@ -1,0 +1,23 @@
+package patikaOdev;
+
+import java.util.Scanner;
+
+public class basamak {
+
+	public static void main(String[] args) {
+		int adet = 0, toplam = 0;
+		Scanner scan = new Scanner(System.in);
+
+		System.out.print("Bir Sayı Girin: ");
+          int sayi = scan.nextInt();
+
+		while (sayi != 0) {
+			toplam += (sayi % 10);
+			sayi /= 10;
+			++adet;
+		}
+		
+		System.out.println("Basamakların toplamı: " + toplam);
+	}
+
+}
