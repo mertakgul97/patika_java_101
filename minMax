@@ -1,0 +1,30 @@
+package patikaOdev;
+
+import java.util.Scanner;
+
+public class minMax {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int max=0,min=0;
+		System.out.print("Kaç tane sayı gireceksiniz: ");
+        int n=scan.nextInt();
+        for(int i=1;i<=n;i++) {
+        	System.out.print(i+". Sayıyı giriniz: ");
+        	int sayi=scan.nextInt();
+        	if(i==1) {
+        		max=sayi;
+        		min=sayi;
+        	}
+        	if(sayi>max) {
+        		max=sayi;
+        	}
+        	if(sayi<min) {
+        		min=sayi;
+        	}
+        }
+        System.out.println("En büyük sayı: " +max);
+        System.out.println("En küçük sayı: " +min);
+	}
+
+}
