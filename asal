@@ -1,0 +1,26 @@
+package patikaOdev;
+
+import java.util.Scanner;
+
+public class asal {
+	static void prime(int sayi,int i){
+        if (i == sayi) {
+            System.out.print(sayi + " asal sayıdır.");
+            return;
+        } else if (sayi%i == 0) {
+            System.out.print(sayi + " asal sayı değildir.");
+            return;
+        }
+
+        prime(sayi, i + 1);
+
+    }
+	public static void main(String[] args) {
+	        Scanner scan = new Scanner(System.in);
+	        System.out.print("Sayı giriniz:  ");
+	        int sayi=scan.nextInt();
+	        prime(sayi,2);
+	    }
+	    
+	}
+
