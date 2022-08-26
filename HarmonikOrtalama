@@ -1,0 +1,19 @@
+package patikaOdev;
+
+public class ArrayHarmonikOrt {
+
+	public static void main(String[] args) {
+		double[] list= {1,2,3,4,5};
+		
+		double sum=0;
+		double harmonikOrt;
+        for(double k:list) {
+        	sum+=1/k;
+        }
+        harmonikOrt=list.length/sum;
+        System.out.println("Harmonik Ortalama: "+harmonikOrt);
+        }
+       
+	}
+
+
